@@ -1,5 +1,5 @@
 <template>
     <div>
-        Pets
+        Pet
     </div>
 </template>
