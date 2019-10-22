@@ -3,14 +3,14 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Cats from '../views/Cats.vue'
 import Dogs from '../views/Dogs.vue'
-import Pets from '../views/Pets.vue'
+import Pet from '../views/Pet.vue'
 
 Vue.use(VueRouter)
 
-export default router = new VueRouter({
+export default new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes = [
+  routes: [
     {
       path: '/',
       name: 'home',
@@ -27,9 +27,9 @@ export default router = new VueRouter({
       component: Dogs
     },
     {
-      path: '/Pets',
-      name: 'pets',
-      component: Pets
+      path: '/Pets/:id',
+      name: 'pet',
+      component: Pet
     }
   ]
 
